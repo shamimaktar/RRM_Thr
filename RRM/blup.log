@@ -1,0 +1,118 @@
+
+renf90.par
+     BLUPF90+ ver. 2.49
+
+ Parameter file:             renf90.par
+ Data file:                  renf90.dat
+ Number of Traits             1
+ Number of Effects           12
+ Position of Observations      1
+ Position of Weights           0
+ Value of Missing Trait/Observation           0
+
+EFFECTS
+ #  type                position (2)        levels   [positions for nested]
+    1  cross-classified       7        10
+    2  covariable             2         1     8
+    3  covariable             3         1     8
+    4  covariable             4         1     8
+    5  covariable             5         1     8
+    6  covariable             6         1     8
+    7  covariable             2         8     9
+    8  covariable             3         8     9
+    9  covariable             4         8     9
+   10  covariable             2         8     9
+   11  covariable             3         8     9
+   12  covariable             4         8     9
+
+ Residual (co)variance Matrix
+  3.7100    
+
+ correlated random effects     7  8  9
+ Type of Random Effect:      additive animal with unknown parent groups and inbreeding
+ Pedigree File:              renadd03.ped                                                                                                                                                                                                                                              
+ trait   effect    (CO)VARIANCES
+  1       7     3.297      0.5940      -1.381    
+  1       8    0.5940      0.9210     -0.2890    
+  1       9    -1.381     -0.2890       1.005    
+
+ correlated random effects    10 11 12
+ Type of Random Effect:      diagonal
+ trait   effect    (CO)VARIANCES
+  1      10     6.872     -0.2540      -1.101    
+  1      11   -0.2540       3.171      0.1670    
+  1      12    -1.101      0.1670       2.457    
+
+ REMARKS
+  (1) Weight position 0 means no weights utilized
+  (2) Effect positions of 0 for some effects and traits means that such
+      effects are missing for specified traits
+ 
+
+ * The limited number of OpenMP threads = 4
+
+ * BLUPF90+ sparse operations version
+ 
+ * START JOB (BLUPF90): 05-04-2023  15h 09m 58s 058
+ 
+ 
+ IJA4 version
+ Data record length =            9
+
+Read 42 records in 3.46 s,  582 nonzeroes
+
+
+Read 8 additive pedigrees
+
+finished peds (BLUP) in 3.46 s,  753 nonzeroes
+
+round =     1  convergence =  0.6378E-01
+round =     2  convergence =  0.1639E-02
+round =     3  convergence =  0.9227E-03
+round =     4  convergence =  0.6279E-03
+round =     5  convergence =  0.8656E-03
+round =     6  convergence =  0.6192E-03
+round =     7  convergence =  0.1799E-03
+round =     8  convergence =  0.1468E-03
+round =     9  convergence =  0.7786E-04
+round =    10  convergence =  0.4503E-04
+round =    11  convergence =  0.2427E-04
+round =    12  convergence =  0.2181E-04
+round =    13  convergence =  0.3014E-04
+round =    14  convergence =  0.1099E-04
+round =    15  convergence =  0.1200E-04
+round =    16  convergence =  0.1207E-04
+round =    17  convergence =  0.9893E-05
+round =    18  convergence =  0.9240E-05
+round =    19  convergence =  0.6117E-05
+round =    20  convergence =  0.4234E-05
+round =    21  convergence =  0.3451E-05
+round =    22  convergence =  0.9970E-06
+round =    23  convergence =  0.4978E-06
+round =    24  convergence =  0.2167E-06
+round =    25  convergence =  0.1052E-06
+round =    26  convergence =  0.1718E-06
+round =    27  convergence =  0.3833E-07
+round =    28  convergence =  0.3017E-07
+round =    29  convergence =  0.1219E-07
+round =    30  convergence =  0.6573E-08
+round =    31  convergence =  0.2864E-08
+round =    32  convergence =  0.2606E-08
+round =    33  convergence =  0.2046E-08
+round =    34  convergence =  0.1538E-08
+round =    35  convergence =  0.7014E-09
+round =    36  convergence =  0.5648E-09
+round =    37  convergence =  0.6253E-09
+round =    38  convergence =  0.6002E-09
+round =    39  convergence =  0.3666E-09
+round =    40  convergence =  0.1111E-09
+round =    41  convergence =  0.1704E-09
+round =    42  convergence =  0.3159E-10
+round =    43  convergence =  0.1340E-10
+round =    44  convergence =  0.8341E-11
+round =    45  convergence =  0.9727E-11
+round =    46  convergence =  0.2809E-12
+   46 iterations,   convergence criterion= 0.2809E-12
+ solutions stored in file: "solutions"
+ *** Statistical Method: BLUP                
+ * FINISHED (BLUPF90): 05-04-2023  15h 09m 58s 777

@@ -1,0 +1,120 @@
+ RENUMF90 version 1.161 with zlib
+* START job     Wall time: 05-04-2023  15h 08m 44s 419
+ renrr.par
+ datafile:datrr.leg
+ traits:           4
+ fields passed:           2
+ number of weights=            1
+ in columns:            0 (0 means no weight)
+ R
+   3.710    
+
+ Processing effect  1 of type cross     
+ item_kind=alpha     
+
+ Processing effect  2 of type cross     
+ item_kind=alpha     
+
+ Processing effect  3 of type cross     
+ item_kind=alpha     
+ Optional permanent environment
+ pedigree file name  "pedrr"
+ positions of animal, sire, dam, alternate dam, yob, and group     1     2     3     0     0     0     0
+ Reading (CO)VARIANCES:           3 x           3
+ Reading (CO)VARIANCES_PE:           3 x           3
+
+ Maximum size of character fields: 20
+
+ Maximum size of record (max_string_readline): 8000
+
+ Maximum number of fields for input file (max_field_readline): 100
+
+ Pedigree search method (ped_search): convention
+
+ Order of pedigree animals (animal_order): default
+
+ Order of UPG (upg_order): default
+
+ Missing observation code (missing): 0
+
+  guessed number of lines           42
+
+ Using prime hash function
+ hash tables for effects set up
+ first 3 lines of the data file (up to 700 characters)
+    4   4  1 17.0 1 .707107 -1.224745 1.581139 -1.870829 2.121320
+    4  38  2 18.6 1 .707107 -.952579 .644168 -.017964 -.620456
+    4  72  3 24.0 1 .707107 -.680414 -.058561 .757057 -.775651
+ read           42  records in   7.0500374E-04  seconds
+ ------------------------------
+Processing effect group    1
+ table with           10  elements sorted
+ added count
+ Effect group            1  of column            1  with           10  levels
+ table expanded from        10000  to        10000  records
+ Effect group            1  done in   3.7788004E-02  seconds
+ ------------------------------
+Processing effect group    2
+ table with            1  elements sorted
+ added count
+ Effect group            2  of column            1  with            1  levels
+ table expanded from        10000  to        10000  records
+ Effect group            2  done in   3.5393983E-02  seconds
+ ------------------------------
+Processing effect group    3
+ added count
+ Effect group            3  of column            1  with            5  levels
+ Effect group            3  done in   6.3002110E-05  seconds
+ wrote statistics in file "renf90.tables"
+
+ Basic statistics for input data  (missing value code is '0')
+ Pos  Min         Max         Mean        SD                 N
+   4    8.0000      24.000      16.207      4.4532          42
+ basic_statistics done in   5.7300925E-04  seconds
+ add_snp done in   2.9802322E-06  seconds
+ reorder_animal done in   1.9967556E-06  seconds
+
+ random effect   3
+ type:animal    
+renumber_animal, start    Wall time: 05-04-2023  15h 08m 44s 738
+ opened output pedigree file "renadd03.ped"
+ first 3 lines of the file (up to 700 characters)
+    1 0 0
+    2 0 0
+    3 0 0
+ load_animals time   1.2600422E-04  seconds
+ read            8  pedigree records
+ loaded            3  parent(s) in round            1
+ load_animals time   1.0499358E-04  seconds
+ read            8  pedigree records
+
+ Pedigree checks
+compute_inbreeding time, start    Wall time: 05-04-2023  15h 08m 44s 739
+
+ Computations for inbreeding coefficients
+actual inbreeding computation, start    Wall time: 05-04-2023  15h 08m 44s 739
+actual inbreeding computation, done     Wall time: 05-04-2023  15h 08m 44s 739
+ Tiny negative value will be replaced with 0 considered as numerical error.
+ Wrote inbreeding file "renf90.inb" with original id
+
+ Inbreeding statistics:
+ the maximum inbreeding coefficient    =  0.1250
+ average inbreeding for inbred animals =  0.1250   n = 1
+                       for all animals =  0.0156   n = 8
+compute_inbreeding time, done     Wall time: 05-04-2023  15h 08m 44s 739
+ loop writing renadd, time   7.5995922E-05  seconds
+ 
+ Number of animals with records                  =            5
+ Number of parents without records               =            3
+ Total number of animals                         =            8
+renumber_animal, end      Wall time: 05-04-2023  15h 08m 44s 739
+ write_SNP_Xref done in   1.9967556E-06  seconds
+ write_map done in   1.9967556E-06  seconds
+
+ Wrote parameter file "renf90.par"
+ write renf90.par done in   2.3299456E-04  seconds
+ Wrote renumbered data "renf90.dat" 42 records
+ write renf90.dat done in   7.9301000E-04  seconds
+ Wrote field information "renf90.fields" for 10 fields in data
+ save_renum_table done in   5.7011843E-05  seconds
+* END  job     Wall time: 05-04-2023  15h 08m 44s 740

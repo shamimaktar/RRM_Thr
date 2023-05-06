@@ -1,0 +1,39 @@
+# Parameter file for Random regression model 
+DATAFILE
+datrr.leg
+TRAITS
+4  
+FIELDS_PASSED TO OUTPUT
+ 2  # dim   
+WEIGHT(S)
+
+RESIDUAL_VARIANCE 
+3.710
+EFFECT
+3 cross alpha          #cg 
+EFFECT
+5 cross alpha   # mu column of ones
+RANDOM_REGRESSION
+data
+RR_POSITION
+6 7 8 9 10
+EFFECT
+1 cross alpha          #cow
+RANDOM
+animal
+OPTIONAL
+pe
+FILE
+pedrr
+RANDOM_REGRESSION
+data
+RR_POSITION
+6 7 8
+(CO)VARIANCES
+ 3.297  0.594 -1.381
+ 0.594  0.921 -0.289
+-1.381 -0.289  1.005
+(CO)VARIANCES_PE
+ 6.872 -0.254 -1.101
+-0.254  3.171  0.167
+-1.101  0.167  2.457

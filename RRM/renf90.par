@@ -1,0 +1,46 @@
+# BLUPF90 parameter file created by RENUMF90
+DATAFILE
+ renf90.dat
+NUMBER_OF_TRAITS
+           1
+NUMBER_OF_EFFECTS
+          12
+OBSERVATION(S)
+    1
+WEIGHT(S)
+ 
+EFFECTS: POSITIONS_IN_DATAFILE NUMBER_OF_LEVELS TYPE_OF_EFFECT[EFFECT NESTED]
+ 7        10 cross 
+ 2          1 cov 8
+ 3          1 cov 8
+ 4          1 cov 8
+ 5          1 cov 8
+ 6          1 cov 8
+ 2          8 cov 9
+ 3          8 cov 9
+ 4          8 cov 9
+ 2          8 cov 9
+ 3          8 cov 9
+ 4          8 cov 9
+RANDOM_RESIDUAL VALUES
+   3.7100    
+ RANDOM_GROUP
+     7     8     9
+ RANDOM_TYPE
+ add_an_upginb
+ FILE
+renadd03.ped                                                                    
+(CO)VARIANCES
+   3.2970      0.59400      -1.3810    
+  0.59400      0.92100     -0.28900    
+  -1.3810     -0.28900       1.0050    
+ RANDOM_GROUP
+    10    11    12
+ RANDOM_TYPE
+ diagonal     
+ FILE
+                                                                                
+(CO)VARIANCES
+   6.8720     -0.25400      -1.1010    
+ -0.25400       3.1710      0.16700    
+  -1.1010      0.16700       2.4570    
