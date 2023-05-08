@@ -12,7 +12,7 @@ RESIDUAL_VARIANCE
 EFFECT
 3 cross alpha          #cg 
 EFFECT
-5 cross alpha   # mu column of ones
+5 cross alpha   # mu column of ones   ????????????
 RANDOM_REGRESSION
 data
 RR_POSITION
